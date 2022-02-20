@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-dark-theme="dark" dark-light-theme="light">
+<head>
+    <!-- <title>{{ page.title }}</title> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    {% seo %}
+</head>
+<body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
+    <div class="Header px-6">
+        <div class="Header-item pl-6">
+        </div>
+        <div class="Header-item">
+            <a href="/" class="Header-link">
+                <span style="font-size: smaller">n</span>
+                <span style="font-size: x-large"><b><i>Y</i></b></span>
+                <span style="font-size: smaller">d</span>
+            </a>
+        </div>
+<!--        <div class="Header-item px-6">-->
+<!--            <input type="search" class="form-control Header-input" />-->
+<!--        </div>-->
+        <div class="Header-item page-title pl-6">
+            <span>{{ page.title }}</span>
+        </div>
+        <div class="Header-item Header-item--full">
+            <span></span>
+        </div>
+        {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
+        {% for page in sorted_list %}
+        <div class="Header-item">
+            <a href="{{ page.permalink }}" class="Header-link">{{ page.title }}</a>
+        </div>
+        {% endfor %}
+        <div class="Header-item pr-6"></div>
+    </div>
+    <article class="mt-3">
