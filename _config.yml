@@ -31,7 +31,7 @@ webrick:
 exclude:
   - .jekyll-cache/
   - .idea/
-  - vendor/
+  - vendor/bundle/
   - Gemfile
   - Gemfile.lock
 
