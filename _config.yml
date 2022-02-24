@@ -10,8 +10,8 @@ markdown: kramdown
 
 sass:
   sass_dir: assets/css/
-#  load_paths:
-#    - node_modules/
+  load_paths:
+    - node_modules/
 
 plugins:
   - jekyll-octicons

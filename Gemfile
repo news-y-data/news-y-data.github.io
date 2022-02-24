@@ -8,11 +8,10 @@ source "https://rubygems.org"
 
 # Replaced jekyll with github-pages
 
-gem 'github-pages', '>= 223', group: :jekyll_plugins
+gem "github-pages", ">= 223", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem 'jekyll-octicons'
-  gem 'jekyll-sitemap'
-  gem 'bootstrap'
+  gem "jekyll-octicons"
+  gem "jekyll-sitemap"
 end
 
