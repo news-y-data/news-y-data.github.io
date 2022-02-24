@@ -1,5 +1,4 @@
 title: News Y Data
-email: News supported by data
 description: >- # this means to ignore newlines until "baseurl:"
   Important information and news that are completely supported by data.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,11 +31,8 @@ webrick:
 exclude:
   - .jekyll-cache/
   - .idea/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+
+
