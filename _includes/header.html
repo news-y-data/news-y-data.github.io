@@ -4,7 +4,9 @@
     <!-- <title>{{ page.title }}</title> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
     {% seo %}
 </head>
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
