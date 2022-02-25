@@ -6,7 +6,7 @@ url: "https://news-y-data.github.io/"
 github_username:  news-y-data
 relative_permalinks: false
 
-markdown: kramdown
+#markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -24,7 +24,10 @@ sass:
     - node_modules/
 
 plugins:
-  - jekyll-octicons
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
 
 webrick:
   headers:

@@ -12,6 +12,5 @@ gem "github-pages", ">= 223", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-octicons"
-  gem "jekyll-sitemap"
 end
 
