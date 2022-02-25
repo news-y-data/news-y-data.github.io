@@ -25,9 +25,11 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-octicons
 
 whitelist:
   - jekyll-sitemap
+  - jekyll-octicons
 
 webrick:
   headers:
