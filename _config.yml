@@ -2,6 +2,8 @@ title: News Y Data
 description: >- # this means to ignore newlines until "baseurl:"
   Important information and news that are completely supported by data.
 baseurl: "" # the subpath of your site, e.g. /blog
+
+# Do not put '/' at the end for sitemap to work well
 url: "https://news-y-data.github.io"
 github_username:  news-y-data
 relative_permalinks: false
