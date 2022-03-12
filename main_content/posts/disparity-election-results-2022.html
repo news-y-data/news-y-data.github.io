@@ -1,12 +1,16 @@
 ---
 layout: blogpost
-title: Disparity between elections results & exit-polls
+title: Variation between elections results and exit-polls
 subtitle: Indian State Elections 2022
-permalink: /disparity-between-elections-results-and-exit-polls
+headline: Variation between the results and exit polls in the context of the 2022 assembly elections
+permalink: /variation-between-elections-results-and-exit-polls
 category: politics, elections, media
-background: Election-Commision-Of-India-2022-Poster.jpeg
-excerpt: We analyze the discrepancy between the exit polls and actual results of elections in the context of 2022 assembly elections conducted in February and March 2022.
+image: up-elections-comparison-500x889.png
+description: We analyze the discrepancy between the exit polls and actual results of elections in the context of 2022 assembly elections conducted in February and March 2022.
+date_published: "2022-03-12T23:00:00+05:30"
+last_modified_at: "2022-03-12T23:00:00+05:30"
 ---
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <article class="container py-2 py-md-4">
     <div class="row">
         <div class="col-md-10 text-black line-height-large">
@@ -84,7 +88,6 @@ excerpt: We analyze the discrepancy between the exit polls and actual results of
                     }
 
                     const chart = new google.visualization.CandlestickChart(document.getElementById('chart_div_up'));
-
                     chart.draw(data, options);
                 }
             </script>
@@ -169,11 +172,17 @@ excerpt: We analyze the discrepancy between the exit polls and actual results of
         </div>
         <div class="col-md-2">
             <div class="position-fixed">
-                <div class="fb-share-button"
+                <div class="fb-share-button pb-4"
                      data-href="{{ site.url }}{{ page.permalink }}"
                      data-layout="button" data-size="large">
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.permalink }}&amp;src=sdkpreparse"
-                       class="fb-xfbml-parse-ignore">Share</a></div>
+                       class="fb-xfbml-parse-ignore">Share</a>
+                </div>
+                <div class="tw-share-button">
+                    <a class="twitter-share-button" data-size="large"
+                       href="https://twitter.com/intent/tweet?text={{ page.headline }}%2e%20">
+                        Tweet</a>
+                </div>
             </div>
         </div>
     </div>

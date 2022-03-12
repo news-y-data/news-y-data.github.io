@@ -1,0 +1,22 @@
+<!-- blog-head.html starts -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        {% if page.headline %}
+        "headline": "{{ page.headline | strip | slice: 0, 109 }}",
+        {% endif %}
+        {% if page.description %}
+        "description": "{{ page.description }}",
+        {% endif %}
+        "image" : [
+            {% if page.image %}
+            "{{ site.url }}/assets/img/{{ page.image }}"
+            {% else %}
+            "{{ site.url }}/assets/img/favicon-1210x1210.png"
+            {% endif %}
+        ],
+        "url" : "{{ site.url }}{{ page.url }}"
+    }
+</script>
+<!-- blog-head.html ends -->
