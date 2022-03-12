@@ -1,0 +1,60 @@
+<!-- body-start.html starts -->
+<body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
+<div class="container-fluid">
+    <header class="align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 border-bottom row bg-dark text-white">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+            <div class="container-fluid">
+                <a href="/" class="">
+                    <!--                        <span style="font-size: smaller">n</span>-->
+                    <!--                        <span style="font-size: x-large"><b><i>Y</i></b></span>-->
+                    <!--                        <span style="font-size: smaller">d</span>-->
+                    <img src="assets/img/favicon-circle-16x16.svg" width="40" height="40">
+                </a>
+                <span class="ps-5 fs-5">news <span class="fw-bolder fst-italic">Y</span> data</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categories</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-dark">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
+                            {% for page in sorted_list %}
+                            <li class="nav-item">
+                                <a href="{{ page.permalink }}" class="nav-link text-white justify-content-center">{{ page.title }}</a>
+                            </li>
+                            {% endfor %}
+                            <!--                                <li class="nav-item dropdown">-->
+                            <!--                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                            <!--                                        Dropdown-->
+                            <!--                                    </a>-->
+                            <!--                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">-->
+                            <!--                                        <li><a class="dropdown-item" href="#">Action</a></li>-->
+                            <!--                                        <li><a class="dropdown-item" href="#">Another action</a></li>-->
+                            <!--                                        <li>-->
+                            <!--                                            <hr class="dropdown-divider">-->
+                            <!--                                        </li>-->
+                            <!--                                        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-dark py-2 row">
+        <div class="d-flex flex-row justify-content-center  align-content-center py-2">
+            <h1 class="text-white text-center">{{ page.title }}</h1>
+        </div>
+        {% if page.subtitle %}
+        <div class="d-flex flex-row justify-content-center pb-1">
+            <h3 class="text-white-50">{{ page.subtitle }}</h3>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<!-- body-start.html ends -->

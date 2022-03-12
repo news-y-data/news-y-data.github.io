@@ -1,12 +1,26 @@
 ---
-layout: primary
+layout: index
 title: News Y Data
-image: /assets/img/favicon-1210x1210.png
+headline: News and articles supported by data
 description: News and articles supported by data
 permalink: /
 ---
-<h1>
-    {{ page.title }}
-    <small class="text-muted">will be coming soon</small>
-</h1>
+<article class="container py-2 py-md-4">
+    <div class="row">
+        {% assign sorted_list = site.html_pages %}
+        {% for p in sorted_list %}
+        {% if p.layout == "blogpost" %}
+        <div class="col-sm-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ p.title }}</h5>
+                    <p class="card-text">{{ p.description }}</p>
+                    <a href="{{ p.permalink }}" class="btn btn-warning">Read more</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</article>
 
