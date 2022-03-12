@@ -1,0 +1,180 @@
+---
+layout: blogpost
+title: Disparity between elections results & exit-polls
+subtitle: Indian State Elections 2022
+permalink: /disparity-between-elections-results-and-exit-polls
+category: politics, elections, media
+background: Election-Commision-Of-India-2022-Poster.jpeg
+excerpt: We analyze the discrepancy between the exit polls and actual results of elections in the context of 2022 assembly elections conducted in February and March 2022.
+---
+<article class="container py-2 py-md-4">
+    <div class="row">
+        <div class="col-md-10 text-black line-height-large">
+            <h4>What are exit polls?</h4>
+            <p class="">
+                Most popular events in India are elections and IPL.
+                Elections in India, the biggest democracy in the world, decide the fate of 17.5% of the world's population.
+                Several organizations try to predict results of both parliamentary and state legislative assemblies.
+                When there are almost <a href="https://www.newindianexpress.com/thesundaystandard/2021/sep/26/500-new-political-parties-registered-in-25-years-2363719.html" target="_blank">
+                2000 political parties</a>, it is difficult to accurately estimate which party would form the Government, let alone number of seats.
+            </p>
+            <p>
+                Still, many media houses try to forecast the results by conducting "exit-polls".
+                To conduct such poll journalists or people hired by firms ask voters coming out of polling booths after casting their ballots about their choice and why they made that certain choice.
+                This data, typically collected from hundreds of booths, will be compiled to draw conclusions.
+            </p>
+            <h4>How accurate are these exit polls?</h4>
+            <p>
+                Here we look at exit poll results calculated by several agencies and compare them with the results of the
+                elections conducted for the recent state assemblies in February-March 2022.
+                In the graphs below, we consider two top parties/alliances in the respective states and measure how accurate are
+                their projections.
+            </p>
+            <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChartUp);
+
+                function drawChartUp() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['name',
+                            'India Today - Axis',   'India Today - Axis',   'end', 'end', {role: 'tooltip'},
+                            "Today's Chanakya",     "Today's Chanakya",     'end', 'end', {role: 'tooltip'},
+                            "ABP News - CVoter",    "ABP News - CVoter",    'end', 'end', {role: 'tooltip'},
+                            'Actual Results',       'Actual Results',       'end', 'end', {role: 'tooltip'}
+                        ],
+
+                        ['BJP+',
+                            288, 288, 326, 326, 'India Today-Axis  288-326',
+                            275, 275, 313, 313, 'Today\'s Chanakya 275-313',
+                            228, 228, 244, 244, 'ABP News - CVoter 228-244',
+                            273, 273, 273, 273, 'Actual: 273'
+                        ],
+
+                        ['SP+',
+                            71, 71, 101, 101, 'India Today-Axis  71-101',
+                            86, 86, 124, 124, 'Today\'s Chanakya 86-124',
+                            132, 132, 148, 148, 'ABP News-CVoter 132-148',
+                            125, 125, 125, 125, 'Actual: 125'
+                        ]
+                    ]);
+
+                    let options = {
+                        animation: {
+                            duration: 800,
+                            startup: true
+                        },
+                        vAxis: {
+                            title: 'Seats range',
+                            baseline: 15
+                        },
+                        bar: { groupWidth: '100%' },
+                        chartArea : {
+                            width: 300
+                        },
+                        legend: {
+                            position: 'top',
+                            alignment: 'end'
+                        }
+                    };
+
+                    const targetWidth = 768;
+                    if ( window.innerWidth >= targetWidth) {
+                        options.chartArea.width = 700
+                        options.bar.groupWidth = '70%'
+                    }
+
+                    const chart = new google.visualization.CandlestickChart(document.getElementById('chart_div_up'));
+
+                    chart.draw(data, options);
+                }
+            </script>
+            <div class="py-3">
+                <h5 class="text-center text-md-start">Uttar Pradesh Assembly Elections 2022</h5>
+                <div id="chart_div_up" style="height: 500px; margin-top: -10px;"></div>
+                <p>
+                    Although all the agencies predicted the winner of the elections, none of the actual seats won have come in the
+                    range of their predictions. "Today's Chanakya"s polls are the closest to the results.
+                </p>
+            </div>
+            <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChartUttarakhand);
+
+                function drawChartUttarakhand() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['name',
+                            'India Today - Axis',   'India Today - Axis',   'end', 'end', {role: 'tooltip'},
+                            "Today's Chanakya",     "Today's Chanakya",     'end', 'end', {role: 'tooltip'},
+                            "ABP News - CVoter",    "ABP News - CVoter",    'end', 'end', {role: 'tooltip'},
+                            'Actual Results',       'Actual Results',       'end', 'end', {role: 'tooltip'}
+                        ],
+
+                        ['BJP',
+                            36, 36, 46, 46, 'India Today-Axis  36-46',
+                            36, 36, 50, 50, 'Today\'s Chanakya 36-50',
+                            26, 26, 32, 32, 'ABP News - CVoter 26-32',
+                            47, 47, 47, 47, 'Actual: 47'
+                        ],
+
+                        ['INC',
+                            20, 20, 30, 30, 'India Today-Axis  20-30',
+                            17, 17, 31, 31, 'Today\'s Chanakya 17-31',
+                            32, 32, 38, 38, 'ABP News - CVoter 32-38',
+                            19, 19, 19, 19, 'Actual: 19'
+                        ]
+                    ]);
+
+                    let options = {
+                        animation: {
+                            duration: 800,
+                            startup: true
+                        },
+                        vAxis: {
+                            title: 'Seats range',
+                            baseline: 15
+                        },
+                        bar: { groupWidth: '100%' },
+                        chartArea : {
+                            width: 300
+                        },
+                        legend: {
+                            position: 'top',
+                            alignment: 'end'
+                        }
+                    };
+
+                    const targetWidth = 768;
+                    if ( window.innerWidth >= targetWidth) {
+                        options.chartArea.width = 700
+                        options.bar.groupWidth = '70%'
+                    }
+                    const chart = new google.visualization.CandlestickChart(document.getElementById('chart_div_uttarakhand'));
+                    chart.draw(data, options);
+                }
+            </script>
+            <div class="py-3">
+                <h5 class="text-center text-md-start">Uttarakhand Assembly Elections 2022</h5>
+                <div id="chart_div_uttarakhand" style="height: 500px; margin-top: -10px;"></div>
+                <p>
+                    For the Uttarakhand elections, only "Today's Chanakya"s predictions came close to the results.
+                    But that estimate has the highest error margin. As observed in the graph, for example, it predcited Congress would
+                    win any number of seats between 17 and 31. That's not a great precision!<br>
+                    ABP News - CVoter's could not even predict who would win the election correctly.
+                </p>
+            </div>
+            <p>
+                Irrespective of their inaccuracies, these polls attract a lot of attention and bring high
+                TRPs(Television Rating Points) to these media firms.
+            </p>
+        </div>
+        <div class="col-md-2">
+            <div class="position-fixed">
+                <div class="fb-share-button"
+                     data-href="{{ site.url }}{{ page.permalink }}"
+                     data-layout="button" data-size="large">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.permalink }}&amp;src=sdkpreparse"
+                       class="fb-xfbml-parse-ignore">Share</a></div>
+            </div>
+        </div>
+    </div>
+</article>

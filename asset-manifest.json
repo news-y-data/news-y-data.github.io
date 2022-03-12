@@ -1,0 +1,18 @@
+{
+  "name": "News Y Data",
+  "short_name": "news-y-data",
+  "theme_color": "#ffc107",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://news-y-data.github.io",
+  "description": "News and articles supported by data",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/assets/img/favicon-16x16.svg",
+      "type": "image/svg+xml",
+      "sizes": "16x16"
+    }
+  ]
+}
