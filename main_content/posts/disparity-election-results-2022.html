@@ -4,7 +4,8 @@ title: Variation between elections results and exit-polls
 subtitle: Indian State Elections 2022
 headline: Variation between the results and exit polls in the context of the 2022 assembly elections
 permalink: /variation-between-elections-results-and-exit-polls
-category: politics, elections, media
+category: ["politics", "elections", "media"]
+section: Elections
 image: up-elections-comparison-500x889.png
 description: We analyze the discrepancy between the exit polls and actual results of elections in the context of 2022 assembly elections conducted in February and March 2022.
 date_published: "2022-03-12T23:00:00+05:30"
@@ -171,17 +172,24 @@ last_modified_at: "2022-03-12T23:00:00+05:30"
             </p>
         </div>
         <div class="col-md-2">
-            <div class="position-fixed">
-                <div class="fb-share-button pb-4"
-                     data-href="{{ site.url }}{{ page.permalink }}"
-                     data-layout="button" data-size="large">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.permalink }}&amp;src=sdkpreparse"
-                       class="fb-xfbml-parse-ignore">Share</a>
-                </div>
-                <div class="tw-share-button">
-                    <a class="twitter-share-button" data-size="large"
-                       href="https://twitter.com/intent/tweet?text={{ page.headline }}%2e%20">
-                        Tweet</a>
+            <div class="position-relative start-50">
+                <div class="position-fixed translate-middle-x">
+                    <div class="position-relative">
+                        <div class="pb-4">
+                            <a target="_blank"
+                               href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url }}&amp;src=sdkpreparse"
+                               class="share-button fb-share-button">
+                                <i class="bi bi-facebook"></i>
+                                Share</a>
+                        </div>
+                        <div class="pb-4">
+                            <a class="share-button twitter-share-button"
+                               target="_blank"
+                               href="https://twitter.com/intent/tweet?text={{ page.headline | url_encode }}&url={{ site.url | append: page.url | url_encode }}">
+                                <i class="bi bi-twitter"></i>
+                                Tweet</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

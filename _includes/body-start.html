@@ -8,10 +8,14 @@
                     <!--                        <span style="font-size: smaller">n</span>-->
                     <!--                        <span style="font-size: x-large"><b><i>Y</i></b></span>-->
                     <!--                        <span style="font-size: smaller">d</span>-->
-                    <img src="assets/img/favicon-circle-16x16.svg" width="40" height="40">
+                    <img src="assets/img/favicon-circle-16x16.svg" width="40" height="40" alt="Logo of News Y Data website">
                 </a>
                 <span class="ps-5 fs-5">news <span class="fw-bolder fst-italic">Y</span> data</span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -24,7 +28,7 @@
                             {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
                             {% for page in sorted_list %}
                             <li class="nav-item">
-                                <a href="{{ page.permalink }}" class="nav-link text-white justify-content-center">{{ page.title }}</a>
+                                <a href="{{ page.permalink }}" class="nav-link header-button mx-2">{{ page.title }}</a>
                             </li>
                             {% endfor %}
                             <!--                                <li class="nav-item dropdown">-->
@@ -52,9 +56,9 @@
         </div>
         {% if page.subtitle %}
         <div class="d-flex flex-row justify-content-center pb-1">
-            <h3 class="text-white-50">{{ page.subtitle }}</h3>
+            <h2 class="text-white-50 text-center">{{ page.subtitle }}</h2>
         </div>
         {% endif %}
     </div>
-</div>
+
 <!-- body-start.html ends -->
