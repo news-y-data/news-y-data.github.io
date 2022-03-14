@@ -1,3 +1,6 @@
+$twitter-color: #00ACEE;
+$fb-color: #5D7DAE;
+
 .page-title {
     font-weight: $font-weight-bold;
     color: var(--color-header-logo);
@@ -38,3 +41,39 @@ $mobileWidth: 540px;
     font-size: 0.85rem;
 }
 
+.header-button {
+    color: white !important;
+    border-radius: 10px;
+    @media screen and (min-width: 768px) {
+        &:active,
+        &:hover {
+            background-color: $warning !important;
+            color: black !important;
+        }
+    }
+}
+
+.share-button {
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.4rem;
+    font-size: small;
+
+    &:hover, &:active {
+        color: white;
+    }
+}
+
+.twitter-share-button {
+    background-color: $twitter-color;
+}
+
+.fb-share-button {
+    background-color: $fb-color;
+}
+
+.card-click-icon {
+    font-size: 35px;
+    background-color: $warning;
+}

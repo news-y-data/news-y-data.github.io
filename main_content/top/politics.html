@@ -1,6 +1,7 @@
 ---
-layout: primary
+layout: category
 title: Politics
+category: politics
 description: Articles related to politics and elections
 headline: Articles related to politics and elections
 subtitle: Articles related to politics and elections
@@ -8,21 +9,4 @@ permalink: /politics
 menu: true
 menuorder: 2
 ---
-<article class="container py-2 py-md-4">
-    <div class="row">
-        {% assign sorted_list = site.html_pages | where_exp:"item", "item.category contains 'politics'" %}
-        {% for p in sorted_list %}
-        {% if p.layout == "blogpost" %}
-        <div class="col-sm-5">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ p.title }}</h5>
-                    <p class="card-text">{{ p.description }}</p>
-                    <a href="{{ p.permalink }}" class="btn btn-warning">Read more</a>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-</article>
+
