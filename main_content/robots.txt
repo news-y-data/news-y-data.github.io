@@ -1,0 +1,9 @@
+---
+layout: plain
+title: robots.txt
+permalink: /robots.txt
+---
+User-agent: *
+Disallow: /node_modules/
+
+Sitemap: {{ site.url | append: "/sitemap.xml" }}
