@@ -16,7 +16,24 @@
             "{{ site.facebook_main_image }}"
             {% endif %}
         ],
-        "url" : "{{ site.url }}{{ page.url }}"
+        "url" : "{{ site.url }}{{ page.url }}",
+        "keywords" : "News,Data,{{ page.tags }}",
+        "inLanguage" : {
+            "@type": "Language",
+            "name": "English"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Pardhu"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.title }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.main_image }}"
+            }
+        }
     }
 </script>
 
