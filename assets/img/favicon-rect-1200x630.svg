@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<svg version="1.1" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+    <style>
+        .small { font-weight: 300; font-size: 25rem; }
+        .middle { font-weight: bolder; font-size: 38rem;}
+        text { font-family: Arial, sans-serif; }
+    </style>
+<rect width="1200" height="630"
+        stroke-width="0"
+        fill="#ffc107"
+/>
+<text x="300" y="330"
+      text-anchor="middle"
+      stroke-width="0px"
+      alignment-baseline="middle"
+      class="small"
+>n</text>
+<text x="600" y="350"
+      text-anchor="middle"
+      stroke-width="0px"
+      alignment-baseline="middle"
+      class="middle"
+>Y</text>
+<text x="900" y="330"
+      text-anchor="middle"
+      stroke-width="0px"
+      alignment-baseline="middle"
+      class="small"
+>d</text>
+</svg>

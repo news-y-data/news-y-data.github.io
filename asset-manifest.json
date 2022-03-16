@@ -1,8 +1,8 @@
 {
   "name": "News Y Data",
   "short_name": "news-y-data",
-  "theme_color": "#ffc107",
-  "background_color": "#000000",
+  "theme_color": "#212529",
+  "background_color": "#212529",
   "display": "standalone",
   "scope": "/",
   "start_url": "https://news-y-data.github.io",
@@ -10,9 +10,14 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/assets/img/favicon-16x16.svg",
-      "type": "image/svg+xml",
-      "sizes": "16x16"
+      "src": "/assets/img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
