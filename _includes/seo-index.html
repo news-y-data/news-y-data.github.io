@@ -1,0 +1,41 @@
+<!-- index-seo.html starts -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        {% if page.headline %}
+        "headline": "{{ page.headline | strip | slice: 0, 109 }}",
+        {% endif %}
+        {% if page.description %}
+        "description": "{{ page.description }}",
+        {% endif %}
+        "image" : [
+            {% if page.image %}
+            "{{ site.url }}/assets/img/{{ page.image }}"
+            {% else %}
+            "{{ site.facebook_main_image }}"
+            {% endif %}
+        ],
+        "url" : "{{ site.url }}{{ page.url }}"
+    }
+</script>
+
+<meta property="og:title"       content="{{ page.title }}" >
+<meta property="og:url"         content="{{ site.url }}" >
+{% if page.description %}
+<meta property="og:description" content="{{ page.description }}" >
+{% endif %}
+<meta property="og:image"
+      content="{% if page.image %}{{ site.url }}/assets/img/{{ page.image }}{% else %}{{ site.facebook_main_image }}{% endif %}"
+/>
+<meta property="og:site_name"   content="{{ site.title }}">
+<meta property="og:type"        content="website" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="{{ site.title }}">
+<meta property="twitter:url" content="{{ site.url }}">
+<meta property="twitter:description" content="{{ page.description }}">
+<meta property="twitter:image" content="{{ site.twitter_main_image }}">
+
+<!-- index-seo.html ends -->

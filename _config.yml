@@ -37,5 +37,8 @@ webrick:
   headers:
     Cache-Control: max-age=0
 
+main_image: https://news-y-data.github.io/assets/img/favicon-rect-1024x1024.png
 
+facebook_main_image: https://news-y-data.github.io/assets/img/favicon-rect-1200x630.png
 
+twitter_main_image: https://news-y-data.github.io/assets/img/favicon-rect-1024x1024.png
