@@ -16,7 +16,20 @@
             "{{ site.facebook_main_image }}"
             {% endif %}
         ],
-        "url" : "{{ site.url }}{{ page.url }}"
+        "url" : "{{ site.url }}{{ page.url }}",
+        "keywords" : "Politics,News,Knowledge,Data",
+        "inLanguage" : {
+            "@type": "Language",
+            "name": "English"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.title }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.main_image }}"
+            }
+        }
     }
 </script>
 
