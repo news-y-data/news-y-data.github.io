@@ -1,4 +1,6 @@
-# news-y-data.github.io
+# News Y Data
+
+## About
 
 "News Y Data" is a website designed to be a platform for news primarily supported by robust data from reliable sources and its critical analysis.
 
@@ -9,6 +11,6 @@ by political, governmental, and private institutions to advance their selfish ag
 
 News Y Data is trying to bridge this gap by allowing individuals to post meaningful insights derived from authentic data. Inspired by the principles of 
 software development, all posts will be reviewed thoroughly by peers (moderators) to ensure quality. Posts are expected to be substantiated by data, 
-preferably in the format of tables and graphs so that everybody can understand.  
+preferably in the format of tables and graphs so that everybody can understand. [This post](https://news-y-data.github.io/variation-between-elections-results-and-exit-polls) is a sample. 
 
-The project is currently looking for new ideas to improve the process and for content creators and moderators.  
+_The project is currently looking for new ideas to improve the process and for content creators and moderators._
